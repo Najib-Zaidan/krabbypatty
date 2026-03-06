@@ -30,17 +30,7 @@ body {
   font-weight: 500;
 }
 
-.menu a.active4 {
+.menu a.active3 {
   color: #4b4be0;
   text-decoration: underline;
-}
-
-/* Tombol Masuk */
-.login button {
-  background: #4b4be0;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 6px;
-  cursor: pointer;
 }
