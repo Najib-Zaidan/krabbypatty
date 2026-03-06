@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9e3cf;
+  padding: 10px 40px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a.active2 {
+  color: #4b4be0;
+  text-decoration: underline;
+}
+
+.title {
+  color: #ccc;
+}
+
+/* Menu Container */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+  color: #ccc;
+}
+
+/* Menu Card */
+.menu-card {
+  background: #222;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  margin: 10px 0;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.menu-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f5c542;
+}
+
+/* Hover effect */
+.menu-card:hover {
+  transform: scale(1.05);
+}

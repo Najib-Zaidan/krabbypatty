@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fdfae6; /* Warna krem senada dengan Rebon Adventure */
+}
+
+/* Navbar */
+header {
+  background-color: #3f408c; /* Biru Gelap */
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a.active {
+  color: white;
+  border-bottom: 2px solid #a29bfe;
+  padding-bottom: 5px;
+}
+
+/* Main Layout */
+main {
+  padding: 40px 5%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+/* Card System */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #7d5fff;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #7d5fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn-detail {
+  background: #3f408c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* --- Desktop Nav (Default) --- */
+header {
+  background-color: #3f408c;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Header harus selalu di paling depan */
+}
+
+.logo {
+  color: white;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+}
+
+nav ul li a.active {
+  color: white;
+  border-bottom: 2px solid #a29bfe;
+}
+
+/* Sembunyikan elemen mobile di desktop */
+#menu-toggle,
+.hamburger {
+  display: none;
+}
+
+/* --- RESPONSIVE (HP) --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Di atas nav */
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  /* Styling Menu Dropdown */
+  nav {
+    display: none; /* Sembunyi awal */
+    position: absolute;
+    top: 100%; /* Pas di bawah header */
+    left: 0;
+    width: 100%;
+    background-color: #3f408c;
+    padding: 20px 0;
+    z-index: 999;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* LOGIKA MUNCULKAN MENU (PENTING!) */
+  #menu-toggle:checked ~ nav {
+    display: block !important;
+  }
+
+  /* Efek Animasi Hamburger jadi X */
+  #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
