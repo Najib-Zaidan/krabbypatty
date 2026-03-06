@@ -30,17 +30,54 @@ body {
   font-weight: 500;
 }
 
-.menu a.active4 {
+.menu a.active3 {
   color: #4b4be0;
   text-decoration: underline;
 }
 
-/* Tombol Masuk */
-.login button {
-  background: #4b4be0;
+/* Container */
+.karyawan-container {
+  padding: 40px;
   color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 6px;
-  cursor: pointer;
+  text-align: center;
+}
+
+.judul {
+  margin-bottom: 40px;
+}
+
+/* Layout grid */
+.karyawan-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Card karyawan */
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Foto */
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Nama */
+.card h2 {
+  margin: 15px 0 5px;
+}
+
+/* Jabatan */
+.card p {
+  color: #ccc;
 }

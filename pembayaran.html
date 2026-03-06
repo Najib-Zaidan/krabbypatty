@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran - Krabby Patty</title>
+    <link rel="stylesheet" href="pembayaran.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">KRABBY PATTY</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="resep.html">Resep</a></li>
+          <li><a href="karyawan.html">Karyawan</a></li>
+          <li><a href="pelanggan.html">Pelanggan</a></li>
+          <li><a href="pembayaran.html" class="active">Pembayaran</a></li>
+          <li><a href="kasir.html">Kasir</a></li>
+          <li><a href="stok.html">Stok</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>RIWAYAT PEMBAYARAN</h1>
+
+      <div class="payment-grid">
+        <div class="payment-card status-lunas">
+          <div class="card-header">
+            <span class="order-id">#KP-1001</span>
+            <span class="badge">LUNAS</span>
+          </div>
+          <div class="card-body">
+            <h3>2x Krabby Patty</h3>
+            <p class="customer">Pelanggan: <strong>Patrick Star</strong></p>
+            <p class="date">06 Maret 2026 | 14:20</p>
+            <hr />
+            <div class="price-row">
+              <span>Total:</span>
+              <span class="total-price">Rp 50.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-card status-pending">
+          <div class="card-header">
+            <span class="order-id">#KP-1002</span>
+            <span class="badge">PENDING</span>
+          </div>
+          <div class="card-body">
+            <h3>1x Kelp Shake</h3>
+            <p class="customer">Pelanggan: <strong>Squidward</strong></p>
+            <p class="date">06 Maret 2026 | 14:45</p>
+            <hr />
+            <div class="price-row">
+              <span>Total:</span>
+              <span class="total-price">Rp 15.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-card status-lunas">
+          <div class="card-header">
+            <span class="order-id">#KP-1003</span>
+            <span class="badge">LUNAS</span>
+          </div>
+          <div class="card-body">
+            <h3>3x Triple Patty Burger</h3>
+            <p class="customer">Pelanggan: <strong>Eugene Krabs</strong></p>
+            <p class="date">06 Maret 2026 | 15:10</p>
+            <hr />
+            <div class="price-row">
+              <span>Total:</span>
+              <span class="total-price">Rp 120.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

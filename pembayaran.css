@@ -1,0 +1,91 @@
+/* Ambil dasar dari style-kasir.css sebelumnya */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body { background-color: #fdfae6; }
+
+header {
+    background-color: #3f408c;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.logo { color: white; font-weight: 900; }
+
+nav ul { display: flex; list-style: none; gap: 15px; }
+
+nav ul li a { text-decoration: none; color: #ccc; font-size: 14px; font-weight: 600; }
+
+nav ul li a.active { color: white; border-bottom: 2px solid #a29bfe; }
+
+/* Main Content */
+main { padding: 40px 5%; text-align: center; }
+
+h1 { margin-bottom: 30px; letter-spacing: 1px; color: #333; }
+
+/* Payment Cards */
+.payment-grid {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+}
+
+.payment-card {
+    background: white;
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.card-header {
+    padding: 12px 20px;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.order-id { font-weight: bold; color: #555; }
+
+.badge {
+    font-size: 10px; padding: 4px 8px; border-radius: 20px; color: white;
+}
+
+/* Status Colors */
+.status-lunas .badge { background-color: #27ae60; } /* Hijau */
+.status-pending .badge { background-color: #f39c12; } /* Kuning */
+.status-lunas { border-top: 5px solid #27ae60; }
+.status-pending { border-top: 5px solid #f39c12; }
+
+.card-body { padding: 20px; }
+
+.card-body h3 { font-size: 18px; margin-bottom: 10px; }
+
+.customer, .date { font-size: 13px; color: #777; margin-bottom: 5px; }
+
+hr { margin: 15px 0; border: 0; border-top: 1px solid #eee; }
+
+.price-row {
+    display: flex; justify-content: space-between;
+    font-weight: bold; font-size: 16px;
+}
+
+.total-price { color: #3f408c; }
+
+/* Responsive Hamburger (Sama seperti Kasir) */
+#menu-toggle { display: none; }
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 25px; height: 3px; background: white; }
+    nav {
+        display: none; position: absolute; top: 100%; left: 0;
+        width: 100%; background: #3f408c; padding: 20px 0;
+    }
+    nav ul { flex-direction: column; align-items: center; }
+    #menu-toggle:checked ~ nav { display: block; }
+}
