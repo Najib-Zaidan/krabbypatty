@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+header{
+background:#ffffff;
+color:rgb(0, 0, 0);
+padding:15px 0;
+}
+
+.navbar{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:rgb(0, 0, 0);
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:50px;
+background:#000000;
+color: #e8f1ff;
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+/* TABEL STOK */
+
+.stok-info{
+width:100%;
+margin:auto;
+padding:50px 0;
+background-color: #000000;
+}
+
+table{
+width: 80%;
+border-collapse:collapse;
+background:rgb(255, 255, 255);
+margin-left: auto;
+margin-right: auto;
+}
+
+th, td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+color: #000000
+}
+
+th{
+background:#ffffff;
+color:rgb(0, 0, 0);
+}
+
+.tersedia{
+color:green;
+font-weight:bold;
+}
+
+.hampir{
+color:orange;
+font-weight:bold;
+}
+
+.habis{
+color:red;
+font-weight:bold;
+}
+
+/* FORM TAMBAH STOK */
+
+.tambah-stok{
+background:#000000;
+padding: 100px;
+margin: auto;
+text-align:center;
+color: #ccc;
+}
+
+form{
+width:350px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+background:#2d89ef;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#1c5fb8;
+}
+
+/* FOOTER */
+
+footer{
+background:#2d89ef;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}

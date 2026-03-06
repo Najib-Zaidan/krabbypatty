@@ -1,0 +1,176 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+header{
+background:#f7f7f8;
+color:rgb(0, 0, 0);
+padding:15px 0;
+}
+
+.navbar{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:rgb(0, 0, 0);
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:#000000;
+color: #f4f4f4;
+}
+
+.hero h2{
+font-size:36px;
+margin-bottom:10px;
+color: #ccc;
+}
+
+/* ABOUT */
+
+.about-customer{
+width:100%;
+margin:auto;
+padding:50px 0;
+text-align:center;
+background-color: #000000;
+color: #f4f4f4;
+}
+
+.about-customer p{
+margin-top:15px;
+line-height:1.7;
+}
+
+/* STATISTIK */
+
+.statistik{
+background:rgb(0, 0, 0);
+padding:50px;
+text-align:center;
+color: #fcf5f5;
+}
+
+.stat-box{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.stat{
+background:#2d89ef;
+color:white;
+padding:30px;
+border-radius:10px;
+width:150px;
+}
+
+/* TESTIMONI */
+
+.testimoni{
+padding:50px;
+text-align:center;
+background-color: #000000;
+color: #e8f1ff;
+}
+
+.testimoni-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+width:250px;
+color: #000000;
+}
+
+/* FEEDBACK */
+
+.feedback{
+background:#000000;
+padding:50px;
+text-align:center;
+color: #f1f0f0;
+}
+
+form{
+width:350px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+background:#2d89ef;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#1c5fb8;
+}
+
+/* FOOTER */
+
+footer{
+background:#2d89ef;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
