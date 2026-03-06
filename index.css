@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9e3cf;
+  padding: 10px 40px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a.active1 {
+  color: #4b4be0;
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: white;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  border: none;
+  background: #f5c542;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-img img {
+  width: 350px;
+}
